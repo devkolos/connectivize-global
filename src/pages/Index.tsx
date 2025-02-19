@@ -184,12 +184,15 @@ const Index = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="glass p-8 text-white text-center"
+                className="glass p-8 text-white text-center relative isolate overflow-hidden"
               >
                 <h3 className="text-2xl font-display mb-4">{option.title}</h3>
                 <p className="text-3xl font-display text-kolos-gold mb-6">{option.price}</p>
                 <p className="text-white/60 mb-6">{option.description}</p>
-                <Button variant="outline" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-white/20">
+                <Button 
+                  variant="outline" 
+                  className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-white/20 mt-auto"
+                >
                   Get Started
                 </Button>
               </motion.div>
@@ -284,6 +287,7 @@ const industries = [
   { icon: ShoppingBag, title: "Consumer Goods & Retail" },
   { icon: Heart, title: "Healthcare & Biotech" },
   { icon: Zap, title: "Energy & Renewable Energy" },
+  { icon: Briefcase, title: "Manufacturing & Supply Chain" },
 ];
 
 const pricingOptions = [
