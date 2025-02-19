@@ -1,10 +1,9 @@
-
 import { motion } from "framer-motion";
 import { 
   Globe2, ArrowRight, Users2, PieChart, Calendar, 
   Building2, Briefcase, Car, ShoppingBag, Heart, Zap,
   CircleDollarSign, CheckCircle, MessageSquare, Target,
-  BrainCircuit, HandShake, ChartBarHorizontal
+  BrainCircuit, Handshake, BarChartHorizontal
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
@@ -312,7 +311,7 @@ const process = [
     description: "Identify top opportunities",
   },
   {
-    icon: HandShake,
+    icon: Handshake,
     title: "Relationship Building",
     description: "Develop key connections",
   },
@@ -322,7 +321,7 @@ const process = [
     description: "Receive tailored support",
   },
   {
-    icon: ChartBarHorizontal,
+    icon: BarChartHorizontal,
     title: "Deal Tracking",
     description: "Monitor progress and outcomes",
   },
