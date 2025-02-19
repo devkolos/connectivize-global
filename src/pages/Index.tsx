@@ -2,10 +2,13 @@
 import { motion } from "framer-motion";
 import { Globe2, ArrowRight, Users2, PieChart, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Header from "@/components/Header";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-kolos-green">
+      <Header />
+      
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent" />
